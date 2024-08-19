@@ -46,20 +46,20 @@
 }
 
 #texto-principal p {
-    font-size: 1.1em;
-    margin-bottom: 10px;
+    font-size: 1em;
+    margin-bottom: 5px;
 }
 
 #destaque-data {
     color: #fff;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: bold;
 }
 
 .icone-principal {
-    width: 24px;
+    width: 20px;
     height: auto;
-    margin-right: 10px;
+    margin-right: 5px;
     vertical-align: middle;
 }
 
