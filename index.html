@@ -90,7 +90,7 @@
 
             <div class="ingressos-box demais">
                 <h3>DEMAIS</h3>
-                <p>R&dollar; 200,00</p>
+                <p>R&dollar; 260,00</p>
             </div>
         </div>
 
@@ -109,20 +109,49 @@
                 <tbody>
                     <tr>
                         <td>Aluno(a)s</td>
-                        <td>R&dollar; 130,00 (em 12x no cartão)</td>
-                        <td>R&dollar; 180,00 (em 10x no cartão)</td>
-                        <td>R&dollar; 230,00 (em 10x no cartão)</td>
+                        <td>R&dollar; 100,00 (em 10x no cartão)</td>
+                        <td>R&dollar; 130,00 (em 10x no cartão)</td>
+                        <td>R&dollar; 160,00 (em 10x no cartão)</td>
                     </tr>
 
                     <tr>
                         <td>Demais</td>
-                        <td>R&dollar; 200,00 (em 12x no cartão)</td>
-                        <td>R&dollar; 250,00 (em 10x no cartão)</td>
-                        <td>R&dollar; 300,00 (em 10x no cartão)</td>
+                        <td>R&dollar; 200,00 (em 10x no cartão)</td>
+                        <td>R&dollar; 260,00 (em 10x no cartão)</td>
+                        <td>R&dollar; 320,00 (em 10x no cartão)</td>
                     </tr>
                 </tbody>
             </table>
         </div>
+
+        <script>
+            function atualizarValoresIngressos() {
+                const dataAtual = new Date();
+                
+                const lote1Fim = new Date('2024-08-28');
+                const lote2Inicio = new Date('2024-08-29');
+                const lote2Fim = new Date('2024-09-08');
+                const lote3Inicio = new Date('2024-09-09');
+
+                
+                const estudanteBox = document.querySelector('.ingressos-box.estudante p');
+                const demaisBox = document.querySelector('.ingressos-box.demais p');
+
+                
+                if (dataAtual <= lote1Fim) {
+                    estudanteBox.textContent = 'R$ 100,00';
+                    demaisBox.textContent = 'R$ 200,00';
+                } else if (dataAtual >= lote2Inicio && dataAtual <= lote2Fim) {
+                    estudanteBox.textContent = 'R$ 130,00';
+                    demaisBox.textContent = 'R$ 260,00';
+                } else if (dataAtual >= lote3Inicio) {
+                    estudanteBox.textContent = 'R$ 160,00';
+                    demaisBox.textContent = 'R$ 320,00';
+                }
+            }
+           
+            window.onload = atualizarValoresIngressos;
+        </script>
 
         <div class="tempo">
             <h3>FALTAM:</h3>
