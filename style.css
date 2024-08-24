@@ -1288,13 +1288,14 @@ tbody tr:hover {
     margin: 10px 0;
     font-size: 1.2em;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
 }
 
 #contatos span {
     font-weight: bold;
+    margin-right: 10px;
 }
 
 #contatos a {
@@ -1321,6 +1322,13 @@ tbody tr:hover {
 
     #contatos p {
         font-size: 1em;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #contatos p span {
+        display: inline-block;
+        margin-bottom: 5px;
     }
 
     #contatos img {
@@ -1340,6 +1348,7 @@ tbody tr:hover {
 
     #contatos p {
         font-size: 1.1em;
+        justify-content: center;
     }
 
     #contatos img {
