@@ -341,7 +341,7 @@ hr {
 
 .ministrante img {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
     border: 3px solid #081a6b;
@@ -374,7 +374,13 @@ hr {
 
 @media (max-width: 600px) {
     .ministrante {
-        max-width: 100%;
+        max-width: 48%;
+        height: auto;
+    }
+
+    .ministrante img {
+        height: auto;
+        object-fit: contain;
     }
 
     .ministros-container {
@@ -412,6 +418,12 @@ hr {
 @media (min-width: 768px) and (max-width: 992px) {
     .ministrante {
         max-width: 48%;
+    }
+
+    .ministrante img {
+        height: 250px;
+        object-fit: cover;
+        width: 250px;
     }
 
     .ministro-container {
